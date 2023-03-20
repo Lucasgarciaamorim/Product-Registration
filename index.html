@@ -12,13 +12,13 @@
 <body>
     <img src="/assets/img/logo.png" alt="logotipo LG" id="logo">
     <header>
-        
+
         <h1>Controle de Produtos</h1>
     </header>
     <section>
-        
-        
-       
+
+
+
         <div id="cards">
             <div class="inputProduto">
                 <label for="">Nome do Produto</label>
@@ -29,10 +29,10 @@
                 <input type="text" id="precoProduto" placeholder="R$ 00,00">
             </div>
             <div id="buttons">
-                <button onclick="produto.Adicionar()" >Adicionar</button>
-                <button >Cancelar</button>
+                <button onclick="produto.Adicionar()">Adicionar</button>
+                <button onclick ="produto.Cancelar()">Cancelar</button>
             </div>
-            
+
         </div>
         <div class="conteudo">
             <table border="1">
@@ -42,17 +42,14 @@
                     <th>Preço</th>
                     <th>Remover</th>
                 </thead>
-                <tbody>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
+                <tbody id="tbody">
+
                 </tbody>
             </table>
         </div>
-        
+
     </section>
-<script src="/script.js"></script>
+    <script src="/script.js"></script>
 </body>
 
 </html>

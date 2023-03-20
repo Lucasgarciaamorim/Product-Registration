@@ -7,7 +7,7 @@
 }
 
 header {
-    
+
     background-color: #0158CC;
     display: flex;
     align-items: center;
@@ -31,10 +31,11 @@ h2 {
 
 
 }
-label{
+
+label {
     margin-bottom: 10px;
     font-size: 20px;
-    
+
 }
 
 
@@ -66,7 +67,7 @@ button {
     font-weight: 900;
     font-size: 15px;
     color: white;
-    transition:  0.5s;
+    transition: 0.5s;
     cursor: pointer;
 }
 
@@ -81,7 +82,7 @@ button {
 button:hover {
     background-color: #ccc;
     color: #0158CC;
-    
+
 }
 
 
@@ -108,7 +109,8 @@ input {
     margin-top: 15px;
 
 }
-table{
+
+table {
     border-collapse: collapse;
     width: 100%;
     text-align: center;
@@ -124,4 +126,8 @@ table th {
 
 table td {
     padding: 1px;
+}
+
+table td img {
+    width: 20px;
 }
