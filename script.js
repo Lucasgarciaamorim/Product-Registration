@@ -57,6 +57,8 @@ class Produto {
             let td_preco = tr.insertCell();
             let td_del = tr.insertCell();
 
+            
+
             td_id.innerText = this.arrayProdutos[i].id;
             td_nome.innerText = this.arrayProdutos[i].nomeProduto;
             td_preco.innerText = this.arrayProdutos[i].precoProduto;
@@ -75,18 +77,20 @@ class Produto {
         document.querySelector('#precoProduto').value = null;
 
     }
-    Deletar(id) {
-        let tbody = document.querySelector('#tbody');
-        for (let i = 0; i < this.arrayProdutos.length; i++) {
-            if(this.arrayProdutos[i].id == id){
-                this.arrayProdutos.splice(i , 1)
-                tbody.deleteRow(i);
-            }
-            
-        }
-        alert('O item foi apagado com sucesso')
 
-    }
-}
+    
+    Deletar(id) {
+        let confirmacao = confirm("Tem certeza que deseja deletar este item?");
+        if (confirmacao) {
+            let tbody = document.querySelector('#tbody');
+            for (let i = 0; i < this.arrayProdutos.length; i++) {
+                if (this.arrayProdutos[i].id == id) {
+                    this.arrayProdutos.splice(i, 1)
+                    tbody.deleteRow(i);
+                }
+            }
+            alert('O item foi apagado com sucesso');
+        }
+    }}
 
 let produto = new Produto();
